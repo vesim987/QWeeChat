@@ -1,0 +1,12 @@
+#ifndef QWEECHAT_GLOBAL_H
+#define QWEECHAT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QWEECHAT_LIBRARY)
+#  define QWEECHATSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QWEECHATSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QWEECHAT_GLOBAL_H
